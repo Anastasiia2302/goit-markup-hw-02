@@ -1,0 +1,14 @@
+:root {
+    --primary-text-color:#212121;
+    --second-color-text:#757575;
+    --primary-background-color:#F5F5F5;
+    --second-background-color:#F5F4FA; 
+    --hover-text-color:#2196F3;
+}
+    
+body {font-family: roboto, sans-serif;
+color:var(--primary-text-color)
+}
+.logo { font-family: raleway, sans-serif;
+color:#2196F3}
+a {text-decoration: none }
