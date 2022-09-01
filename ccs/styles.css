@@ -1,23 +1,24 @@
 :root {
     --primary-text-color:#212121;
-    --text-color:#ffffff;
+    --text-color:#FFFFFF;
     --second-color-text:#757575;
-    --primary-background-color:#F5F5F5;
-    --text-header-link:#212121;
+    --also-text-color:#2196F3;
+    --primary-background-color:#FFFFFF;
     --second-background-color:#F5F4FA; 
     --background-color:#2F303A;
-    --hover-text-color:#2196F3;
+    
 }
     
 body {font-family: roboto, sans-serif;
 color:var(--primary-text-color);
 background-color:var(--primary-background-color)
 }
-li {list-style-type: none}
+ul {list-style: none}
 
 /* Header */
-.page-header {background-color:var(--primary-background-color);
-font-size: 14px;}
+.page-header { background-color: var(--primary-background-color);
+font-size: 14px;
+line-height: 1.17;}
 
 .logo {font-family: Raleway;
     font-size: 26px;
@@ -25,44 +26,96 @@ font-size: 14px;}
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;}
     
-.logo:hover {text-decoration:underline;
-        text-decoration-color: #2196F3;}
-.web-header {color:#2196F3}
-
-.page-header {background-color:var(--primary-background-color);}
+.logo:hover  {text-decoration:underline;
+        text-decoration-color:var(--also-text-color);}
+.web-header {color:var(--also-text-color)}
 
 .link {text-decoration: none;
-    color:var(--text-header-link)
+    color:var(--primary-text-color)
     }
-.link:cursor, .link-header:cursor, .link-footer:cursor {pointer}
+.link:hover, .link-contact:hover, .btn:hover {color:var(--also-text-color)}
 
-.link:hover , .link-header:hover { color:var(--hover-text-color)
-   }
-.link-header:focus, .link:focus, .link-footer:focus {color:#2196F3}
-.link-header {text-decoration: none;
-    color:#757575}
-
+.link:focus, .link-contact:focus,.btn:focus {color:var(--also-text-color)}
+.link-contact {color:var(--second-color-text);
+    text-decoration: none}
 
 
 /* Hero */
-.hero-section {background-color: var(--background-color);}
-.title {color: var(--text-color);
+.hero-section {background-color:var(--background-color);}
+.hero-title {color: var(--text-color);
 font-size:44px;
+line-height: 1.36;
 text-align: center}
-.buttons {color:var(--text-color);
+.btn {
+color:var(--text-color);
 font-size:16px;
-background-color: var(--hover-text-color);}
+line-height: 1.87;
+background-color:var(--also-text-color);
+text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+cursor:pointer}
+
 
 /* section-features */
+.features-title {color:transparent}
+.features {font-size: 14px;
+line-height: 1.17;}
+.features-text {font-size: 14px;
+line-height: 1.71;
+color: rgba(117, 117, 117, 1);}
 
-.section-features {}
-.features {color:transparent}
-.features-title {font-size: 14px;}
-.features-text {font: size 14px;
-color: rgba(117, 117, 117, 1);
-;}
+
+/* section-about */
+.about {color:var(--primary-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+}
+.about-img {height: 294px;}
+
+
+/* section-staff */
+.section-staff {background-color:var(--second-background-color);
+}
+.our-staff {color:var(--primary-text-color);
+font-size: 36px;
+line-height: 1.17;}
+.staff-img {height: 260px;}
+.staff 
+.staff-text {color:var(--second-color-text);
+    font-size:16px;
+    line-height: 1.17;}
+
+/* section-portfolio  */
+.portfolio {color:transparent}
+.btn-portfolio {color:var(--primary-text-color);
+font-size: 16px;
+line-height: 1.62;
+background-color: var(--second-background-color);
+cursor: pointer;}
+.btn-portfolio:hover {color:var(--text-color);
+background-color:var(--also-text-color)}
+.btn-portfolio:focus {color:var(--text-color);
+    background-color:var(--also-text-color)}
+
+.img-porfolio {height: 294px;}
+.portfolio-list {font-size: 18px;
+line-height: 2;}
+.port-text {color:var(--second-color-text);
+    font-size:16px;
+line-height: 1.87;}
+
+
 
 /* footer */
-.page-footer {background-color:#2F303A;}
-.contacts {color:transparent}
-.footer-contact{color:#FFFFFF}
+.page-footer {background-color:var(--background-color);
+  font-size:14px;  
+  }
+.contact {color:transparent}
+.logo-footer {font-family: Raleway, sans-serif;
+font-size: 26px;
+color:#FFFFFF;
+text-decoration:none;}
+.web-footer {color:var(--also-text-color)}
+.link-footer, .link-mail {font-style:normal;
+    color:var(--text-color);
+    text-decoration: none;}
+.link-footer:hover, .link-mail:hover {color:var(--also-text-color)}
